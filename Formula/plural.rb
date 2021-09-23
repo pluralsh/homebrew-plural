@@ -9,6 +9,7 @@ class Plural < Formula
 
   depends_on "helm"
   depends_on "kubectl"
+  depends_on "terraform"
   depends_on "go" => :build
 
   def install
