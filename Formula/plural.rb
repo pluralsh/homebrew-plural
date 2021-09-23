@@ -7,7 +7,7 @@ class Plural < Formula
   license "GNU Affero General Public License v3.0"
   head "https://github.com/pluralsh/plural-cli.git"
 
-  depends_on "helm" => "3.5.2"
+  depends_on "helm"
   depends_on "kubectl"
   depends_on "terraform"
   depends_on "go" => :build
