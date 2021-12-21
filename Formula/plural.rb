@@ -2,14 +2,14 @@ class Plural < Formula
   desc "CLI for interacting with the plural platform"
   homepage "https://docs.plural.sh"
   url "https://github.com/pluralsh/plural-cli.git",
-    revision: "636481993aa16a9742b644ba6635f6d941967183"
-  version "0.2.2"
+    revision: "3ccf0e8aa51f1a9e9892dcf64bc47c260046aa10"
+  version "0.2.4"
   license "MIT License"
   head "https://github.com/pluralsh/plural-cli.git"
 
-  depends_on "helm"
-  depends_on "kubectl"
-  depends_on "terraform"
+  depends_on "helm" => :recommended
+  depends_on "kubectl" => :recommended
+  depends_on "terraform" => :recommended
   depends_on "go" => :build
 
   def install
