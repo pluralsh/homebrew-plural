@@ -2,8 +2,8 @@ class Plural < Formula
   desc "CLI for interacting with the plural platform"
   homepage "https://docs.plural.sh"
   url "https://github.com/pluralsh/plural-cli.git",
-    revision: "c8bf8e19eb1a654be5e5d4de75461aa347abf0cf"
-  version "0.2.16"
+    revision: "8369ec2aaf2115e307510e341adae95f4816f2ea"
+  version "0.2.17"
   license "MIT License"
   head "https://github.com/pluralsh/plural-cli.git"
 
