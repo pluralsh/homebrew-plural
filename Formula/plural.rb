@@ -3,7 +3,7 @@ class Plural < Formula
   homepage "https://docs.plural.sh"
   url "https://github.com/pluralsh/plural-cli.git",
     revision: "0dc918f0f7122623ee451ed1e6115e789a88cae4"
-  version "0.2.47"
+  version "0.2.48"
   license "MIT License"
   head "https://github.com/pluralsh/plural-cli.git"
 
