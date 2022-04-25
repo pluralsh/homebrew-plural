@@ -7,9 +7,9 @@ class Plural < Formula
   license "MIT License"
   head "https://github.com/pluralsh/plural-cli.git"
 
+  depends_on "go" => :build
   depends_on "helm" => :recommended
   depends_on "kubectl" => :recommended
-  depends_on "go" => :build
   depends_on "terraform" => :recommended
 
   def install
