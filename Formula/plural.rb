@@ -2,9 +2,9 @@ class Plural < Formula
   desc "CLI for interacting with the plural platform"
   homepage "https://docs.plural.sh"
   url "https://github.com/pluralsh/plural-cli.git",
-    revision: "git@github.com:pluralsh/homebrew-plural.git"
-  version "0.2.51"
-  license "MIT"
+    revision: "fd3f29f049e6b3c9974841a404a694e4ac4fabf9"
+  version "0.2.53"
+  license "MIT License"
   head "https://github.com/pluralsh/plural-cli.git"
 
   depends_on "go" => :build
