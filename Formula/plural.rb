@@ -9,8 +9,8 @@ class Plural < Formula
 
   depends_on "helm" => :recommended
   depends_on "kubectl" => :recommended
-  depends_on "terraform" => :recommended
   depends_on "go" => :build
+  depends_on "terraform" => :recommended
 
   def install
     # Don't dirty the git tree
