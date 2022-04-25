@@ -1,6 +1,6 @@
 # Pluralsh Plural
 
-## How do I install these formulae?
+## How to install these formulae?
 
 `brew install pluralsh/plural/<formula>`
 
