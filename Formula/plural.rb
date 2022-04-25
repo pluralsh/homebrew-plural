@@ -4,7 +4,7 @@ class Plural < Formula
   url "https://github.com/pluralsh/plural-cli.git",
     revision: "fd3f29f049e6b3c9974841a404a694e4ac4fabf9"
   version "0.2.53"
-  license "MIT License"
+  license "MIT"
   head "https://github.com/pluralsh/plural-cli.git"
 
   depends_on "go" => :build
