@@ -15,7 +15,7 @@ class Plural < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "b7e05a24f37142f3be9813b6804c1cc436091878e28dce3e2323063ed74e6d16"
+      sha256 "1c9c63954b43e6e598d594bd2b1e475a4a196cf6bcd4a011261041329bfbe6de"
 
       def install
         bin.install "plural"
@@ -23,7 +23,7 @@ class Plural < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7b23921f086385231992b1ae3253463421fa133710aeb1718eda3b363a358f28"
+      sha256 "b90bfa7a23f839ec795717b4eb3dfaae853e84f7dccce10b1a31d4da248e1cd6"
 
       def install
         bin.install "plural"
@@ -32,17 +32,17 @@ class Plural < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "feb264117baab03ac3f003a7d96049b443795fa4243e76691915226dae9b7cc5"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "61f388c3f56f4804b1ad945069b9caba961a39e42e4e5bdb4f15cb1ab9784ff7"
 
       def install
         bin.install "plural"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "cb6282507758607b4e343e39ec5f45c077bd53506dcc79eff98682784fd12f22"
+    if Hardware::CPU.intel?
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.5.13/plural-cli_0.5.13_Linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "33e498b311bfd3f3348abab3f713ed4cd8167d70d00762c2dc83b89f3cc6484c"
 
       def install
         bin.install "plural"
