@@ -5,21 +5,21 @@
 class Plural < Formula
   desc "CLI for interacting with the plural platform"
   homepage "https://docs.plural.sh"
-  version "0.9.3"
+  version "0.9.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.3/plural-cli_0.9.3_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7c986abe27a2d14e20be4169c5ad282845e8f5709855a06858de8721ccf9a84d"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.4/plural-cli_0.9.4_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "b99ffa16d8665defe05a413c6769ae88a683487333344240513be6d9773367ab"
 
       def install
         bin.install "plural"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.3/plural-cli_0.9.3_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4d47edce38afdf15e6ffa24b5998878426c1700360e62c071800874dff23c214"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.4/plural-cli_0.9.4_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d364abd71c8ad653a30d26884a0f7224c83d2e1115c1b4d86191551735104f79"
 
       def install
         bin.install "plural"
@@ -29,16 +29,16 @@ class Plural < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.3/plural-cli_0.9.3_Linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "67dbffd0daff5bd2084d56529997b8da6a872568c6f668ac8ffabf3e50546f90"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.4/plural-cli_0.9.4_Linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "8dd2b37280251c188c468f92b8331f3750a1ffa9d746a0233c54ee910c4a3f58"
 
       def install
         bin.install "plural"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.3/plural-cli_0.9.3_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "215accd0f7db67693c5a7e1f6a3c5f8ed6bfea2f22fc56973172eeba7eb4ac9c"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.4/plural-cli_0.9.4_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "06a7133a465fe4675892d9a971509e1fa3cd0ccd8636562900e1569780556290"
 
       def install
         bin.install "plural"
