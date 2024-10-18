@@ -5,21 +5,21 @@
 class Plrlctl < Formula
   desc "CLI to manage and operate a fleet of clusters"
   homepage "https://docs.plural.sh"
-  version "0.9.24"
+  version "0.9.25"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.24/pluralctl_0.9.24_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5b43fccb61e54dbf1823d62ccff6d62ed1e1738efba7d1f325635bb66afb5d26"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.25/pluralctl_0.9.25_Darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "6278c544e6bfd5a28154202961ea39243ebe7a66827afbc2b296ae3da0fa42f0"
 
       def install
         bin.install "pluralctl"
       end
     end
     on_arm do
-      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.24/pluralctl_0.9.24_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "89ca340c49c03c8e72b043748a5ea4260a94c7aab9499bdcf0edc6eb88148bb7"
+      url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.25/pluralctl_0.9.25_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "ae7fdbe2beba2be47246f9f8fb23625e03dde2f0fe210ae712b6e966a651628e"
 
       def install
         bin.install "pluralctl"
@@ -30,8 +30,8 @@ class Plrlctl < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.24/pluralctl_0.9.24_Linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "41bf04ca488c478ffebf1cdcddf08362cef5349a812d02f9e4fd33a056d86f94"
+        url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.25/pluralctl_0.9.25_Linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "690236a2ee6481dd1c0bf3c0d962575bce2899cc8ef4940653c2e7989c188010"
 
         def install
           bin.install "pluralctl"
@@ -40,8 +40,8 @@ class Plrlctl < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.24/pluralctl_0.9.24_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "7f807333fe4eecee6242fb4860caeebbe9dd7c7da4d82ec0b3621dd473dd62ab"
+        url "https://github.com/pluralsh/plural-cli/releases/download/v0.9.25/pluralctl_0.9.25_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "0433986f095c7e52171ebcf14c6da7f19d5ef549ee13ae03af1aae3354ed039c"
 
         def install
           bin.install "pluralctl"
